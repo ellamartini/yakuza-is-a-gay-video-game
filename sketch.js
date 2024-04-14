@@ -17,7 +17,7 @@ let emojis = [
 
 function preload() {
   music = loadSound("assets/kiwamimusic.m4a");
-  mankiss = loadImage("images/essenceofmankiss.gif");
+  mankiss = loadImage("images/essenceofmankissFIXED.gif");
 }
 
 function setup() {
