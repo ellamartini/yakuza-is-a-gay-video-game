@@ -11,22 +11,47 @@ canvas {
   max-height: 90vh;
 }
 
-.center {
+header {
+  background-color: black;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 8px;
+}
+
+.header-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+}
+
+.mankissGIF {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  margin:auto;
+  margin-top: 110px;
+  position: absolute;
+  width: 800px;
 }
 
 #content-container {
-  padding-top: 25px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#footer{
-    padding-top: 15px;
+#links {
+  display: flex;
+  justify-content: right;
+  padding: 5px
+}
+
+#footer {
+    top: 15px;
     display: table;
     text-align: center;
     margin-left: auto;
