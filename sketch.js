@@ -1,5 +1,6 @@
 let button;
 let music;
+let mankiss;
 let emojis = [
   "❤️",
   "💕",
@@ -11,23 +12,20 @@ let emojis = [
   "😘",
   "😘",
   "😘",
-  "😘",
   "BIG KISS",
 ];
 
 function preload() {
   music = loadSound("assets/kiwamimusic.m4a");
-  mankiss = loadImage("images/essenceofmankissFIXED.gif");
 }
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("sketch-container");
-  rectMode(CENTER);
-  //music.play();
+
   button = createButton("click here");
   button.mousePressed(togglePlay);
-  button.position(150, 300);
+  button.position(150, 350);
 }
 
 function windowResized() {
@@ -49,7 +47,7 @@ function togglePlay() {
     //randomized background emojis
     for (let x = 0; x <= width; x += 1) {
       text(random(emojis), random(width), random(height));
-    }
+        }
   } else {
     music.pause();
     redraw();
@@ -59,10 +57,7 @@ function togglePlay() {
 
 function draw() {
   //gif frame
+  rectMode(CENTER);
   fill("black");
-  rect(width / 2, height / 2, 920, 520);
-
-  //gif
-  imageMode(CENTER);
-  image(mankiss, width / 2, height / 2, 900, 500);
+  rect(width / 2, 373, 920, 530);
 }
