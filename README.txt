@@ -1,1 +1,0 @@
-Simple webpage featuring a GIF taken from "Yakuza Kiwami". Site header reads "YAKUZA IS A GAY VIDEO GAME". Clicking the button reveals random emojis and plays combat music from the game. Clicking the button again hides emojis and pauses the music. 
